@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Block from "./Block";
-import backGround from "./background.jpeg";
+import backGround from "../imgs/background.jpeg";
 
 const Board = () => {
   const [board, setBoard] = useState([
