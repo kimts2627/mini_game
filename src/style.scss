@@ -134,8 +134,46 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 1400px;
-  height: 900px;
+  width: 100vw;
+  height: 100vh;
+  & h1 {
+    font-size: 25px;
+    color: rgb(0, 4, 255);
+    font-weight: bold;
+  }
+  & header {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  & .start {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & button {
+      width: 200px;
+      height: 80px;
+      font-size: 40px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.form {
+  margin-top: 30px;
+  & textarea {
+    width: 600px;
+    height: 300px;
+  }
 }
 
 .block {
