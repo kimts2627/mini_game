@@ -190,6 +190,28 @@ table {
 }
 
 .block-fire {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: solid black 1px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  display: inline-block;
+  overflow: hidden;
+  & .fire {
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    width: 80px;
+    height: 30px;
+  }
+}
+
+.block-fire-empty {
   width: 30px;
   height: 30px;
   border: solid black 1px;
@@ -201,6 +223,7 @@ table {
   cursor: pointer;
   z-index: 20;
   display: inline-block;
+  position: relative;
 }
 
 .ship {
